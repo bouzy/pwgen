@@ -1,1 +1,1 @@
-# passwd-gen
+# pwgen
