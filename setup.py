@@ -4,13 +4,14 @@ from os import system as terminal
 
 # PLACEMENT
 directory_location = '/opt/pwgen/'
-scripts = 'pwgen.py'
+script = 'pwgen.py'
 terminal_command = 'ln -s /opt/pwgen/pwgen.py /usr/bin/pwgen'
 
 def pwgen_setup():
+    terminal('chmod +x ' + script)
     terminal('mkdir ' + directory_location)
-    terminal('cp ' + scripts + ' ' + directory_location)
-    terminal(terminal_command) #SYMBOLIC LINK IS BROKEN
+    terminal('cp ' + script + ' ' + directory_location)
+    terminal(terminal_command)
 
 if __name__ == "__main__":
     pwgen_setup()
