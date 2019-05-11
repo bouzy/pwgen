@@ -1,14 +1,20 @@
 #!/usr/bin/python3.6
 
-from sys import argv
+import random
 
-def passwd():
-    print('password')
+passwd = []
+upper_case = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+lower_case = 'abcdefghijklmnopqrstuvwxyz'
+special_char = '!@#$%^&*()'
+num_int = '1234567890'
+str_choice = upper_case + lower_case + special_char + num_int
 
-def command():
-    print('test')
+def pass_gen():
+    loop = 0
+    while loop < 30:
+        passwd.append(random.choice(str_choice))
+        loop += 1
+    print(''.join(passwd))
 
 if __name__ == '__main__':
-    min_legth = '8'
-    max_length = '25'
-    command()
+    pass_gen()
