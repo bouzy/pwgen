@@ -18,6 +18,7 @@ Run the passwd-gen command.
 $ pwgen
 
 A random 30 character password will be generated.
+```
 
 ## Icluded in the password
 At least 1 uppercase character.
