@@ -21,7 +21,9 @@ A random 30 character password will be generated.
 ```
 
 ## Icluded in the password
+```
 At least 1 uppercase character.
 At least 1 lowercase character.
 At least 1 number.
 At least 1 special character.
+```
