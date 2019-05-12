@@ -6,14 +6,14 @@ passwd = []
 upper_case = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 lower_case = 'abcdefghijklmnopqrstuvwxyz'
 special_char = '!@#$%^&*()'
-num_int = '1234567890'
-str_choice = upper_case + lower_case + special_char + num_int
+number = '0123456789'
+str_choice = upper_case + lower_case + special_char + number
 
 def pass_gen():
-    loop = 0
-    while loop < 30:
+    rand_loop = 0
+    while rand_loop < 30:
         passwd.append(random.choice(str_choice))
-        loop += 1
+        rand_loop += 1
     print(''.join(passwd))
 
 if __name__ == '__main__':
