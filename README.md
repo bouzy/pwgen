@@ -1,10 +1,10 @@
 **PWGEN** generates a random password.
 
 ## Supported OS
-- Ubuntu/Debian/Kali Linux
+- Ubuntu/Debian/Kali Linux/MacOS
 
 ## Requirements
-- Python 3.6
+- Python 3.6 or higher
 
 ## Installation
 Run the setup file `setup.py`

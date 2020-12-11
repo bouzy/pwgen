@@ -1,4 +1,4 @@
-#!/usr/bin/python3.6
+#!/usr/bin/python3
 
 import random
 
@@ -8,6 +8,7 @@ lower_case = 'abcdefghijklmnopqrstuvwxyz'
 special_char = '!@#$%^&*()'
 number = '0123456789'
 str_choice = upper_case + lower_case + special_char + number
+#str_choice = upper_case + special_char + number
 
 def pass_gen():
     rand_loop = 0
