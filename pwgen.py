@@ -1,21 +1,22 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 import random
 
+letters = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
+special_characters = '~!@#$%^&*()_-+={}[]|<>?'
+numbers = '0123456789'
+string_choice = letters + special_characters + numbers
 passwd = []
-upper_case = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-lower_case = 'abcdefghijklmnopqrstuvwxyz'
-special_char = '!@#$%^&*()'
-number = '0123456789'
-str_choice = upper_case + lower_case + special_char + number
-#str_choice = upper_case + special_char + number
 
-def pass_gen():
-    rand_loop = 0
-    while rand_loop < 30:
-        passwd.append(random.choice(str_choice))
-        rand_loop += 1
+def passwd_generator():
+
+    random_loop = 0
+
+    while random_loop < 21:
+        passwd.append(random.choice(string_choice))
+        random_loop += 1
+    
     print(''.join(passwd))
 
 if __name__ == '__main__':
-    pass_gen()
+    passwd_generator()
