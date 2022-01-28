@@ -3,7 +3,7 @@
 import random
 
 letters = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
-special_characters = '~!@#$%^&*()_-+={}[]|<>?'
+special_characters = '~!@#$%^&*)(_-+=}{][|><?'
 numbers = '0123456789'
 string_choice = letters + special_characters + numbers
 passwd = []
