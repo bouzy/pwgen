@@ -4,14 +4,13 @@ import string
 import random
 
 special_characters = list('~`!@#$%^&*()_-+={}[]|<>?')
-lower_case = list(string.ascii_lowercase)
-upper_case = list(string.ascii_uppercase)
+lowercase_letters = list(string.ascii_lowercase)
+uppercase_letters = list(string.ascii_uppercase)
 digits = list(string.digits)
-string_choice = lower_case + upper_case + digits + special_characters
-
-passwd = []
+string_choice = lowercase_letters + uppercase_letters + digits + special_characters
 
 def passwd_generator():
+    passwd = []
     random_loop = 0
     while random_loop < 21:
         passwd.append(random.choice(string_choice))
