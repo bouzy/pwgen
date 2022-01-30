@@ -3,7 +3,7 @@
 import string
 import random
 
-special_characters = list('~`!@#$%^&*()_-+={}[]|<>?')
+special_characters = list('~`!@#$%^&*()_-+={}[]|<>?:;,.')
 lowercase_letters = list(string.ascii_lowercase)
 uppercase_letters = list(string.ascii_uppercase)
 digits = list(string.digits)
