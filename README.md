@@ -1,7 +1,7 @@
 **PWGEN** generates a random password.
 
 ## Supported OS
-- Ubuntu/Debian/Kali Linux/MacOS
+- Linux and Unix based operating systems
 
 ## Requirements
 - Python 3.6 or higher
@@ -17,10 +17,7 @@ Run the pwgen command.
 ```bash
 $ pwgen
 ```
-A random 30 character password will be generated.
+A random 21 character password will be generated.
 
-## Included in the password
-At least 1 uppercase character.<br />
-At least 1 lowercase character.<br />
-At least 1 number.<br />
-At least 1 special character.
+## Included in the password randomization
+The randomization includes uppercase, lowercase, digits and special characters
