@@ -7,9 +7,9 @@
 - Python 3.6 or higher
 
 ## Installation
-Run the setup file `setup.py`
+Run the setup file `setup.sh`
 ```bash
-$ sudo ./setup.py
+$ sudo sh setup.sh
 ```
 
 ## Usage
