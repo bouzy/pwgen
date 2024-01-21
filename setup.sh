@@ -1,9 +1,5 @@
 #!/bin/sh
 
-directory_location='/opt/pwgen'
-script='pwgen.py'
-symbolic_link='ln -s /opt/pwgen/pwgen.py /usr/bin/pwgen'
-
 pwgen_setup()
 {
     chmod +x $script
@@ -11,5 +7,17 @@ pwgen_setup()
     cp $script $directory_location
     $symbolic_link
 }
+
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    directory_location='/opt/pwgen'
+    script='pwgen.py'
+    symbolic_link='ln -s /opt/pwgen/pwgen.py /usr/bin/pwgen'
+fi
+
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    directory_location='/opt/pwgen'
+    script='pwgen.py'
+    symbolic_link='ln -s /opt/pwgen/pwgen.py /usr/bin/pwgen'
+fi
 
 pwgen_setup
