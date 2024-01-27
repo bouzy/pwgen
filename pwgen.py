@@ -27,16 +27,12 @@ def validation():
     
     for p in passwd:
         if p in digits and digit == 'no':
-            #print(p + ' is a digit')
             digit = 'yes'
         elif p in special_characters and special_character == 'no':
-            #print(p + ' is a special character')
             special_character = 'yes'
         elif p in lowercase_letters and lowercase == 'no':
-            #print(p + ' is a lowercase character')
             lowercase = 'yes'
         elif p in uppercase_letters and uppercase == 'no':
-            #print(p + ' is an uppercase character')
             uppercase = 'yes'
 
         if special_character == 'yes' and lowercase == 'yes' and uppercase == 'yes' and digit == 'yes':
