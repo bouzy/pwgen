@@ -1,7 +1,8 @@
 **PWGEN** generates a random password
 
 ## Supported OS
-- Linux and Unix based operating systems
+- Debian/Ubuntu
+- MacOS/FreeBSD
 
 ## Requirements
 - Python 3.9.6 or higher
