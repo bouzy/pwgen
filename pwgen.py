@@ -44,6 +44,7 @@ def validation():
         print(''.join(passwd))
         return
     else:
+        passwd.clear()
         passwd_generator()
 
 if __name__ == '__main__':
