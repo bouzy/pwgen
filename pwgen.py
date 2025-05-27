@@ -23,23 +23,22 @@ def validation():
     special_character = 'no'
     lowercase = 'no'
     uppercase = 'no'
-    exitcode = 'FAILED'
     
-    for p in passwd:
-        if p in digits and digit == 'no':
+    for password in passwd:
+        if password in digits and digit == 'no':
             digit = 'yes'
-        elif p in special_characters and special_character == 'no':
+        elif password in special_characters and special_character == 'no':
             special_character = 'yes'
-        elif p in lowercase_letters and lowercase == 'no':
+        elif password in lowercase_letters and lowercase == 'no':
             lowercase = 'yes'
-        elif p in uppercase_letters and uppercase == 'no':
+        elif password in uppercase_letters and uppercase == 'no':
             uppercase = 'yes'
 
         if special_character == 'yes' and lowercase == 'yes' and uppercase == 'yes' and digit == 'yes':
             exitcode = 'PASSED'
         else:
             exitcode = 'FAILED'
-    
+
     if exitcode == 'PASSED':
         print(''.join(passwd))
         return
@@ -48,4 +47,4 @@ def validation():
         passwd_generator()
 
 if __name__ == '__main__':
-    validation()
+    passwd_generator()
