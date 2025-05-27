@@ -18,7 +18,7 @@ Run the pwgen command
 ```bash
 $ pwgen
 ```
-A random 21 character password will be generated
+A random 25 character password will be generated
 
 ## Included in the password randomization
-The randomization includes uppercase, lowercase, digits and special characters
+The randomization includes uppercase and lowercase letters, digits and special characters
