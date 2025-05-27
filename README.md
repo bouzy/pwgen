@@ -5,7 +5,7 @@
 - MacOS/FreeBSD
 
 ## Requirements
-- Python 3.12.1
+- Python 3.13.3
 
 ## Installation
 Run the setup file `setup.sh`
