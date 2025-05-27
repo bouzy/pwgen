@@ -13,7 +13,7 @@ passwd = []
 
 def passwd_generator():
     random_loop = 0
-    while random_loop < 21:
+    while random_loop < 25:
         passwd.append(random.choice(string_choice))
         random_loop += 1
     validation()
