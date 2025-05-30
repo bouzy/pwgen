@@ -16,7 +16,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
 elif [[ "$OSTYPE" == "darwin"* ]]; then
     directory_location='/opt/pwgen'
     script='pwgen.py'
-    symbolic_link='ln /opt/pwgen/pwgen.py /usr/bin/pwgen'
+    symbolic_link='ln -s /opt/pwgen/pwgen.py /usr/local/bin/pwgen'
 
 elif [[ "$OSTYPE" == "freebsd"* ]]; then
     directory_location='/opt/pwgen'
